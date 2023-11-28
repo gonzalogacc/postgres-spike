@@ -40,7 +40,7 @@ jobs:
       - name: Ping Postgres
         # Runs a script that creates a PostgreSQL table, populates
         # the table with data, and then retrieves the data.
-        run: psql -h postgres -d postgres_db -U postgres_user -c 'SELECT 1;'
+        run: ./test.sh
         env:
           # postgress password is required; alternatively, you can run:
           # `PGPASSWORD=postgres_password psql ...`
