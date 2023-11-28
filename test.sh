@@ -1,3 +1,3 @@
 #! /bin/sh
 
-psql -U postgres -p 5432 -l
+psql -h ${POSTGRES_HOST} -U postgres -p ${POSTGRES_PORT} -l
